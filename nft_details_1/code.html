@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NFT Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4A82F7", // Energetic Blue for Base chain
+                        "secondary": "#FFB800", // Warm Gold for Lucky Packet theme
+                        "background-light": "#F0F0F5",
+                        "background-dark": "#12121B",
+                        "container-dark": "#1A1A2B",
+                        "container-light": "#FFFFFF",
+                        "text-light-primary": "#12121B",
+                        "text-dark-primary": "#F0F0F5",
+                        "text-light-secondary": "#6b7280",
+                        "text-dark-secondary": "#a1a1aa",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 backdrop-blur-sm">
+<button class="text-text-light-primary dark:text-text-dark-primary flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Commemorative Card</h2>
+</header>
+<main class="flex-1 px-4">
+<!-- Header Image -->
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[380px] mt-2 shadow-lg shadow-primary/10" data-alt="Golden dragon with intricate scales soaring through cosmic clouds, symbolizing luck and power for the Lunar New Year." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMUnrEehKCry4Ctj01izl1Mx8X1LWcO_daDnECaVUZIo4jieNUJ8zLWA_u_Pp1I8XHPrxM-aw8PfkweE3kUSnX13Mgs54dNta9TsDB8rrHB_QbwweuPEt8RlZnjU_eyrcyw6gjmYbk9sEHjwKbVPptH54S9LNmPqDoDF7Pjt5VisAb4og_MszITQCIkYuvbJZbWpLwz4UpR85LC2Y7r3T0nmsVKGc-ejWIa9eqqtSF7GmnqnqlT6Ofabs0-wUimkpQls2oGHGTXIjk");'>
+</div>
+<!-- Headline Text -->
+<h1 class="text-text-light-primary dark:text-text-dark-primary tracking-tight text-[32px] font-bold leading-tight text-left pb-1 pt-6">Lunar New Year Dragon 2024</h1>
+<!-- Meta Text -->
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-normal leading-normal pb-4">Issued on February 10, 2024</p>
+<!-- Body Text -->
+<p class="text-text-light-primary dark:text-text-dark-primary text-base font-normal leading-relaxed pb-6">
+                A commemorative card celebrating the Community Kick-off Gala for the Lunar New Year. This token marks a special moment in our community's history, symbolizing prosperity and good fortune.
+            </p>
+<!-- Metadata List -->
+<div class="space-y-3 pb-8">
+<div class="flex items-center justify-between rounded-lg bg-container-light dark:bg-container-dark p-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="text-text-light-secondary dark:text-text-dark-secondary">Rarity</span>
+</div>
+<span class="font-bold text-secondary bg-secondary/20 px-3 py-1 rounded-full text-sm">Legendary</span>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-container-light dark:bg-container-dark p-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">celebration</span>
+<span class="text-text-light-secondary dark:text-text-dark-secondary">Event</span>
+</div>
+<span class="font-medium text-text-light-primary dark:text-text-dark-primary">Community Kick-off Gala</span>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-container-light dark:bg-container-dark p-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">link</span>
+<span class="text-text-light-secondary dark:text-text-dark-secondary">Chain</span>
+</div>
+<span class="font-medium text-text-light-primary dark:text-text-dark-primary">Base</span>
+</div>
+</div>
+</main>
+<!-- Action Buttons -->
+<footer class="sticky bottom-0 z-10 bg-background-light/80 dark:bg-background-dark/80 p-4 backdrop-blur-sm">
+<div class="grid grid-cols-2 gap-4">
+<a class="flex h-14 w-full items-center justify-center gap-2 rounded-lg bg-primary/20 text-primary font-bold text-base hover:bg-primary/30 active:bg-primary/40" href="#">
+<span class="material-symbols-outlined">ios_share</span>
+                    Share
+                </a>
+<a class="flex h-14 w-full items-center justify-center gap-2 rounded-lg bg-primary text-white font-bold text-base hover:bg-primary/90 active:bg-primary/80" href="#">
+                    View on Basescan
+                    <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+</footer>
+</div>
+</body></html>

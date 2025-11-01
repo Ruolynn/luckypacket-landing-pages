@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket dApp - Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A90E2", // Changed from #ea2a33 to match request
+            "accent": "#F5A623",
+            "background-light": "#F7F7F7", // Changed from #f8f6f6
+            "background-dark": "#1A1A1A", // Changed from #211111
+            "text-light": "#1A1A1A",
+            "text-dark": "#F7F7F7",
+            "card-light": "#FFFFFF",
+            "card-dark": "#2C2C2C",
+            "border-light": "#EAEAEA",
+            "border-dark": "#3A3A3A"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style type="text/tailwindcss">
+    @layer utilities {
+      .glassy-button {
+        @apply bg-white/20 backdrop-blur-lg border border-white/30 shadow-lg shadow-black/5;
+      }
+      @keyframes liquid-glass-flow {
+        0% { transform: translate(0, 0) scale(1.5); }
+        25% { transform: translate(10px, -20px) scale(1.6); }
+        50% { transform: translate(-20px, 20px) scale(1.5); }
+        75% { transform: translate(20px, -10px) scale(1.6); }
+        100% { transform: translate(0, 0) scale(1.5); }
+      }
+      .liquid-glass-bg::before, .liquid-glass-bg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:
+          radial-gradient(circle at 20% 20%, rgba(74, 144, 226, 0.1), transparent 40%),
+          radial-gradient(circle at 80% 70%, rgba(245, 166, 35, 0.1), transparent 40%);
+        mix-blend-mode: screen;
+        z-index: 0;
+        opacity: 0.8;
+      }
+      .liquid-glass-bg::before {
+        animation: liquid-glass-flow 25s ease-in-out infinite;
+      }
+      .liquid-glass-bg::after {
+        animation: liquid-glass-flow 35s ease-in-out infinite reverse;
+        animation-delay: -5s;
+        opacity: 0.6;
+      }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden liquid-glass-bg">
+<div class="relative z-10">
+<div class="flex items-center bg-white/0 p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Profile</h2>
+</div>
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-4 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="User wallet identicon, an abstract geometric pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCO5endxf6203s58haBLETH0rt4GMR1KyQRTpmCE7wNG1vZPAMurCz9n_7M-OcNpzG5eKkRPdwmT0Tg1QOkcCL9t4gTsQG2JTvxckbhvFp2Fv9kZlbdfCJs9OE3q_cvZOiHLN8g_3L7Wl0FD_y3Q48X8fqq78kSQPsB5r5wxWt4jmOKFKq3uYopkYyVB8WhcdgFnVA-YJ3bm5806LRSbP7TBcQDa8VaasLzWfVfTEXZums2N68w7pGstJPnBGm-sr3-itp2hGPZpFlt");'></div>
+<div class="flex flex-col items-center justify-center">
+<div class="flex items-center gap-2">
+<p class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em]">0x1234...abcd</p>
+<button class="text-primary dark:text-primary">
+<span class="material-symbols-outlined !text-xl">content_copy</span>
+</button>
+</div>
+<p class="mt-1 text-sm font-medium text-white bg-primary rounded-full px-3 py-0.5">Base</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark">
+<p class="text-text-light dark:text-text-dark/80 text-base font-medium leading-normal">Packets Created</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">128</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-xl p-6 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark">
+<p class="text-text-light dark:text-text-dark/80 text-base font-medium leading-normal">Packets Claimed</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">42</p>
+</div>
+</div>
+<div class="px-4 pt-4 pb-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Achievements</h3>
+</div>
+<div class="flex gap-4 px-4 overflow-x-auto pb-4">
+<div class="flex flex-col items-center justify-center gap-2 shrink-0">
+<div class="relative">
+<div class="flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full size-20 border border-border-light dark:border-border-dark">
+<span class="text-5xl">🧧</span>
+</div>
+<button class="glassy-button absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-background-light bg-primary text-white dark:border-background-dark">
+<span class="material-symbols-outlined !text-base">share</span>
+</button>
+</div>
+<p class="text-text-light dark:text-text-dark text-xs font-medium w-20 text-center">First Packet</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 shrink-0">
+<div class="relative">
+<div class="flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full size-20 border border-border-light dark:border-border-dark">
+<span class="text-5xl">🎁</span>
+</div>
+<button class="glassy-button absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-background-light bg-primary text-white dark:border-background-dark">
+<span class="material-symbols-outlined !text-base">share</span>
+</button>
+</div>
+<p class="text-text-light dark:text-text-dark text-xs font-medium w-20 text-center">Claim Master</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 shrink-0">
+<div class="relative">
+<div class="flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full size-20 border border-border-light dark:border-border-dark">
+<span class="text-5xl">✨</span>
+</div>
+<button class="glassy-button absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-background-light bg-primary text-white dark:border-background-dark">
+<span class="material-symbols-outlined !text-base">share</span>
+</button>
+</div>
+<p class="text-text-light dark:text-text-dark text-xs font-medium w-20 text-center">Lucky Star</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 shrink-0">
+<div class="relative">
+<div class="flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full size-20 border border-border-light dark:border-border-dark">
+<span class="text-5xl">🤝</span>
+</div>
+<button class="glassy-button absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-background-light bg-primary text-white dark:border-background-dark">
+<span class="material-symbols-outlined !text-base">share</span>
+</button>
+</div>
+<p class="text-text-light dark:text-text-dark text-xs font-medium w-20 text-center">Social Butterfly</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 shrink-0">
+<div class="flex items-center justify-center bg-background-light dark:bg-background-dark rounded-full size-20 border border-dashed border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-text-light/40 dark:text-text-dark/40 !text-4xl">lock</span>
+</div>
+<p class="text-text-light/40 dark:text-text-dark/40 text-xs font-medium w-20 text-center">Top Creator</p>
+</div>
+</div>
+<div class="px-4 pb-4">
+<div class="flex flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between">
+<h4 class="text-text-light dark:text-text-dark text-base font-bold leading-tight tracking-[-0.015em]">NFT Commemorative Card</h4>
+<a class="text-sm font-semibold text-primary" href="#">View All</a>
+</div>
+<p class="text-sm text-text-light/60 dark:text-text-dark/60">Special NFTs earned for significant milestones.</p>
+<div class="relative aspect-[3/4] w-full max-w-sm mx-auto overflow-hidden rounded-xl border border-border-light dark:border-border-dark">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWDsYyjLKpbsaca1A5EfsmgDt5acC7uKp4Dn4odsuOG2C7hwlgwq4h_PmnMYw3q7ebH0LTLa1CXbLHilo-qUqKpVLTZuZiLdFuEkwPQ7-xAOgXZ0Ev-7acPT9-IFcmAl12_i8Je0tmMY7Lp0arpgTaD30B5Z7H7XgmCZmfmrnpWoHExJwyIPKugUBKdwpe2QfGrjXKmEpqJb737U5QhwTQ3dYbfc0auBZeuLcyv92ICblzmD8AkF0SinCdoclSnrHVpvUaECV9XWy0")'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<div class="flex items-center gap-2">
+<div class="flex items-center justify-center size-8 rounded-full bg-accent text-white">
+<span class="material-symbols-outlined !text-xl">celebration</span>
+</div>
+<p class="flex-1 text-base font-bold text-white">Genesis Packet Creator</p>
+</div>
+<p class="mt-2 text-xs text-white/80">Awarded for being one of the first 100 users to create a lucky packet.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-0">Settings</h3>
+<div class="flex flex-col px-4 space-y-2">
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark px-4 min-h-14 justify-between rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10">
+<span class="material-symbols-outlined">edit</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Edit Profile</p>
+</div>
+<div class="shrink-0 text-text-light/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark px-4 min-h-14 justify-between rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Notifications</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-background-light dark:bg-background-dark p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+<div class="h-full w-[27px] rounded-full bg-white" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px, rgba(0, 0, 0, 0.06) 0px 3px 1px;"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark px-4 min-h-14 justify-between rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10">
+<span class="material-symbols-outlined">language</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Language</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-text-light/60 dark:text-text-dark/60">English</span>
+<div class="text-text-light/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark px-4 min-h-14 justify-between rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10">
+<span class="material-symbols-outlined">help_outline</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">Help &amp; Support</p>
+</div>
+<div class="shrink-0 text-text-light/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-card-light dark:bg-card-dark px-4 min-h-14 justify-between rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10">
+<span class="material-symbols-outlined">info</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">About LuckyPacket</p>
+</div>
+<div class="shrink-0 text-text-light/60 dark:text-text-dark/60">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="p-4 mt-4">
+<button class="glassy-button flex w-full items-center justify-center gap-2 rounded-lg bg-accent/20 dark:bg-accent/30 p-3 text-center text-base font-bold text-accent">
+<span class="material-symbols-outlined">logout</span>
+        Disconnect Wallet
+      </button>
+</div>
+</div>
+</div>
+</body></html>

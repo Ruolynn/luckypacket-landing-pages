@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Report Exclusive Content</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea2a33",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    /* Custom radio button style to match the provided component */
+    .form-radio {
+      --radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(234,42,51)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%273%27/%3e%3c/svg%3e');
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center justify-start">
+</div>
+<h2 class="text-[#1b0e0e] dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Report Exclusive Content</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 w-12 bg-transparent text-[#1b0e0e] dark:text-gray-100 gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col flex-1">
+<main class="flex-1 px-4">
+<!-- Body Text -->
+<p class="text-[#1b0e0e] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1">Please select a reason for your report.</p>
+<!-- Radio List -->
+<div class="flex flex-col gap-3">
+<label class="flex items-center gap-4 rounded-xl border border-solid border-[#e7d0d1] dark:border-gray-700 p-[15px] flex-row-reverse bg-background-light dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary/20 dark:has-[:checked]:border-primary">
+<input class="form-radio h-5 w-5 border-2 border-[#e7d0d1] dark:border-gray-600 bg-transparent text-transparent checked:border-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-primary" name="report-reason" type="radio"/>
+<div class="flex grow flex-col">
+<p class="text-[#1b0e0e] dark:text-gray-100 text-sm font-medium leading-normal">Inappropriate Content</p>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-xl border border-solid border-[#e7d0d1] dark:border-gray-700 p-[15px] flex-row-reverse bg-background-light dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary/20 dark:has-[:checked]:border-primary">
+<input class="form-radio h-5 w-5 border-2 border-[#e7d0d1] dark:border-gray-600 bg-transparent text-transparent checked:border-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-primary" name="report-reason" type="radio"/>
+<div class="flex grow flex-col">
+<p class="text-[#1b0e0e] dark:text-gray-100 text-sm font-medium leading-normal">Broken Link</p>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-xl border border-solid border-[#e7d0d1] dark:border-gray-700 p-[15px] flex-row-reverse bg-background-light dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary/20 dark:has-[:checked]:border-primary">
+<input class="form-radio h-5 w-5 border-2 border-[#e7d0d1] dark:border-gray-600 bg-transparent text-transparent checked:border-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-primary" name="report-reason" type="radio"/>
+<div class="flex grow flex-col">
+<p class="text-[#1b0e0e] dark:text-gray-100 text-sm font-medium leading-normal">Misleading Information</p>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-xl border border-solid border-[#e7d0d1] dark:border-gray-700 p-[15px] flex-row-reverse bg-background-light dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary/20 dark:has-[:checked]:border-primary">
+<input class="form-radio h-5 w-5 border-2 border-[#e7d0d1] dark:border-gray-600 bg-transparent text-transparent checked:border-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-primary" name="report-reason" type="radio"/>
+<div class="flex grow flex-col">
+<p class="text-[#1b0e0e] dark:text-gray-100 text-sm font-medium leading-normal">Scam/Phishing Attempt</p>
+</div>
+</label>
+<label class="flex items-center gap-4 rounded-xl border border-solid border-[#e7d0d1] dark:border-gray-700 p-[15px] flex-row-reverse bg-background-light dark:bg-background-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary/20 dark:has-[:checked]:border-primary">
+<input class="form-radio h-5 w-5 border-2 border-[#e7d0d1] dark:border-gray-600 bg-transparent text-transparent checked:border-primary checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-primary" name="report-reason" type="radio"/>
+<div class="flex grow flex-col">
+<p class="text-[#1b0e0e] dark:text-gray-100 text-sm font-medium leading-normal">Other</p>
+</div>
+</label>
+</div>
+<!-- Text Field -->
+<div class="flex max-w-[480px] flex-wrap items-end gap-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#1b0e0e] dark:text-gray-100 text-base font-medium leading-normal pb-2">Details</p>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1b0e0e] dark:text-gray-100 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#e7d0d1] dark:border-gray-700 bg-background-light dark:bg-background-dark/50 focus:border-primary dark:focus:border-primary min-h-36 placeholder:text-[#994d51] dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal" placeholder="Optional: Provide more details here..."></textarea>
+</label>
+</div>
+</main>
+<!-- Button Group -->
+<div class="sticky bottom-0 bg-background-light dark:bg-background-dark pt-2 pb-4">
+<div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 mx-auto">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-white dark:text-gray-100 text-base font-bold leading-normal tracking-[0.015em] w-full">
+<span class="truncate">Submit Report</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-transparent text-[#1b0e0e] dark:text-gray-100 text-base font-bold leading-normal tracking-[0.015em] w-full hover:bg-primary/10 dark:hover:bg-primary/20">
+<span class="truncate">Cancel</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

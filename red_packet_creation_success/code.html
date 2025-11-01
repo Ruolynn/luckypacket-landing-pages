@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket Creation Success</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ea2a33",
+              "background-light": "#f8f6f6",
+              "background-dark": "#211111",
+              "text-light": "#1b0e0e",
+              "text-dark": "#f8f6f6",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glassy-button {
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.2s ease-in-out;
+        }
+        .glassy-button:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .dark .glassy-button {
+            background-color: rgba(40, 20, 20, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .dark .glassy-button:hover {
+            background-color: rgba(50, 30, 30, 0.7);
+        }
+        .liquid-blob-1 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(234, 42, 51, 0.15) 0%, rgba(234, 42, 51, 0) 70%);
+            top: 10%;
+            left: -50px;
+            z-index: 0;
+            filter: blur(20px);
+        }
+        .liquid-blob-2 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(234, 42, 51, 0.1) 0%, rgba(234, 42, 51, 0) 70%);
+            bottom: 5%;
+            right: -100px;
+            z-index: 0;
+            filter: blur(30px);
+        }
+        .dark .liquid-blob-1, .dark .liquid-blob-2 {
+            background: radial-gradient(circle, rgba(234, 42, 51, 0.25) 0%, rgba(234, 42, 51, 0) 70%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="liquid-blob-1"></div>
+<div class="liquid-blob-2"></div>
+<div class="relative z-10 flex flex-col flex-1">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Creation Successful</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-text-light dark:text-text-dark gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center p-4 flex-1">
+<!-- Headline Text -->
+<h1 class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-4">Your LuckyPacket is Ready!</h1>
+<!-- QR Code Display -->
+<div class="w-full max-w-xs flex flex-col items-center p-6 my-6 rounded-xl glassy-button">
+<div class="w-full gap-1 overflow-hidden bg-white aspect-square rounded-lg flex">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1" data-alt="A scannable QR code for the LuckyPacket link" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0GA-YdAI7rjywVArCB1Ai6e0WvE7SMUmDOS2aiw-5sb2Kq5Gp5AXBhGfqcAVJR1bAjCXRCqQ8DS7quuDFgS7yrx2A4QBlLCu1jNfjMOL4xdKcm-CUHff_MdPXwbf6CVym6gMiiG9PpXosLc__BeTXZ4M2LtE8m-yWvADCHjdPQe2ZKtexr6X2OUrtD8U26ekV71xxsZK7EtIr-8Or03kN8Q8_pOBVLgqTWD6XdZdp2StyFwjU-sHt-sdG_hXu14aDn_DlDii-u0Dg");'></div>
+</div>
+</div>
+<!-- Sharable Link -->
+<div class="flex items-center gap-3 w-full max-w-xs glassy-button rounded-full px-4 py-3 mb-6">
+<p class="text-text-light/80 dark:text-text-dark/80 text-base font-normal leading-normal text-left flex-1 truncate">luckypack.et/ab12cd</p>
+<button class="flex items-center justify-center bg-primary/10 dark:bg-primary/20 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined text-xl">content_copy</span>
+</button>
+</div>
+<!-- Social Share Buttons -->
+<div class="flex items-center justify-center gap-4 mb-8">
+<button class="flex items-center justify-center w-14 h-14 glassy-button rounded-full text-text-light dark:text-text-dark">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M13.682 10.682L20.25 4h-1.55l-5.889 6.73-4.72-6.73H3l6.933 9.832L3 20h1.55l6.273-7.169 5.054 7.169H21l-7.318-9.318zm-2.26 2.063l-.746-.922L4.75 4.9h2.388l5.12 6.442.746.922 6.06 7.502h-2.388l-5.46-6.87z"></path></svg>
+</button>
+<button class="flex items-center justify-center w-14 h-14 glassy-button rounded-full text-text-light dark:text-text-dark">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M22 6.3c0-.9-.8-1.5-1.6-1.1L3.9 11.2c-.8.4-.8 1.5 0 1.9l4 1.6 1.6 4c.4.8 1.5.8 1.9 0l6.1-14.5c.3-.8-.3-1.6-1.1-1.6zM6.5 12.8l10-6.6-4.5 4.5-1.8.7.7 1.8 4.5-4.5-6.6 10z"></path></svg>
+</button>
+<button class="flex items-center justify-center w-14 h-14 glassy-button rounded-full text-text-light dark:text-text-dark">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20.283 3.717c-1.316-.763-2.85-1.226-4.433-1.464a.803.803 0 00-.775.443.792.792 0 00.125.862c1.233.914 2.33 2.05 3.125 3.325a15.42 15.42 0 01-8.6 0c.792-1.275 1.888-2.41 3.125-3.325a.792.792 0 00.125-.862.803.803 0 00-.775-.443c-1.583.238-3.117.7-4.433 1.464C3.25 5.618 1.617 9.617 1.5 13.75c0 .083.008.167.017.25.133 3.35 1.983 6.45 4.675 8.158a.798.798 0 00.867-.142.803.803 0 00.225-.833c-.15-.467-.284-.942-.4-1.425a.803.803 0 01.425-.817c.4-.2.817-.383 1.225-.558a.81.81 0 01.817.2c.767.692 1.617 1.275 2.525 1.742a.8.8 0 00.875,0c.908-.467 1.758-1.05 2.525-1.742a.81.81 0 01.817-.2c.408.175.825.358 1.225.558a.803.803 0 01.425.817c-.116.483-.25.958-.4 1.425a.803.803 0 00.225.833.798.798 0 00.867.142c2.692-1.708 4.542-4.808 4.675-8.158.009-.083.017-.167.017-.25 0-4.133-1.75-8.132-6.217-10.033zM8.5 15.5c-.825 0-1.5-.833-1.5-1.85S7.675 11.8 8.5 11.8s1.5.833 1.5 1.85S9.325 15.5 8.5 15.5zm7 0c-.825 0-1.5-.833-1.5-1.85S14.675 11.8 15.5 11.8s1.5.833 1.5 1.85S16.325 15.5 15.5 15.5z"></path></svg>
+</button>
+<button class="flex items-center justify-center w-14 h-14 glassy-button rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="sticky bottom-0 z-20 w-full p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-white/10">
+<div class="flex flex-col items-center gap-3">
+<button class="flex w-full max-w-sm cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 px-6">View Lucky Packet Details</button>
+<button class="flex w-full max-w-sm cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 bg-transparent text-primary dark:text-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 px-6 ring-2 ring-primary/30 dark:ring-primary/50">Create Another Packet</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

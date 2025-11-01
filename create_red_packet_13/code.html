@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Lucky Packet</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#E53935",
+            "background-light": "#F5F5F5",
+            "background-dark": "#212121",
+            "text-light": "#212121",
+            "text-dark": "#F5F5F5",
+            "subtle-light": "#9E9E9E",
+            "subtle-dark": "#9E9E9E",
+            "card-light": "#FFFFFF",
+            "card-dark": "#2a2a2a",
+            "border-light": "#EEEEEE",
+            "border-dark": "#424242",
+            "success": "#4CAF50"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+    body {
+      min-height: max(884px, 100dvh);
+      background: white;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .liquid-glass-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 40%, rgba(200, 200, 255, 0.1), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(255, 200, 200, 0.1), transparent),
+        radial-gradient(circle 500px at 50% 50%, rgba(200, 255, 200, 0.05), transparent);
+      opacity: 0.8;
+      z-index: -1;
+      animation: liquid-flow 25s infinite linear;
+    }
+    @keyframes liquid-flow {
+      0% {
+        transform: rotate(0deg) scale(1.2);
+      }
+      50% {
+        transform: rotate(180deg) scale(1.5);
+      }
+      100% {
+        transform: rotate(360deg) scale(1.2);
+      }
+    }
+    .glass-button {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .glass-button-primary {
+      background: rgba(229, 57, 53, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .glass-button-primary:hover {
+      background: rgba(229, 57, 53, 0.8);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .glass-input {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(2px);
+    }.switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 24px;
+    }
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #E53935;
+    }
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }.modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .modal-overlay.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    .modal-content {
+        background: white;
+        width: 100%;
+        max-width: 100%;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    .modal-overlay.open .modal-content {
+        transform: translateY(0);
+    }
+    .tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip-container .tooltip-text {
+      visibility: hidden;
+      width: 250px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: left;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      position: absolute;
+      z-index: 10;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -125px;opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+    .tooltip-container .tooltip-text::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    }
+    .tooltip-container:hover .tooltip-text,
+    .tooltip-container:focus .tooltip-text,
+    .tooltip-container:focus-within .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white font-display text-text-light">
+<div class="liquid-glass-bg"></div>
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-white/0 backdrop-blur-sm z-10">
+<button class="text-text-light flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-text-light text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Create Packet</h1>
+<div class="size-10 shrink-0"></div>
+</header>
+<main class="flex-1 px-4 py-2 overflow-y-auto">
+<div class="space-y-6 pb-24">
+<div class="glass-card p-4 rounded-xl shadow-sm">
+<h2 class="text-sm font-bold text-text-light mb-4">PACKET DETAILS</h2>
+<div class="space-y-4">
+<div>
+<label class="text-xs font-medium text-subtle-light" for="token-amount">Total Amount</label>
+<div class="relative mt-1">
+<input class="form-input glass-input w-full rounded-lg border-transparent text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" id="token-amount" placeholder="0.0" type="text"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3">
+<span class="font-bold text-text-light">ETH</span>
+</div>
+</div>
+</div>
+<div>
+<label class="text-xs font-medium text-subtle-light" for="packet-count">Number of Packets</label>
+<div class="relative mt-1">
+<input class="form-input glass-input w-full rounded-lg border-transparent text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" id="packet-count" placeholder="e.g., 100" type="number"/>
+</div>
+</div>
+<div>
+<label class="text-xs font-medium text-subtle-light" for="message">Message (Optional)</label>
+<div class="relative mt-1">
+<input class="form-input glass-input w-full rounded-lg border-transparent text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" id="message" placeholder="Good luck!" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-4 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<h2 class="text-sm font-bold text-text-light">TASK REQUIREMENTS (OPTIONAL)</h2>
+<div class="tooltip-container">
+<button aria-label="Task requirement information" class="flex items-center justify-center text-subtle-light">
+<span class="material-symbols-outlined text-base">info</span>
+</button>
+<div class="tooltip-text">
+<p><strong class="text-white">Mandatory tasks</strong> must be completed to claim the Lucky Packet.</p>
+<p class="mt-2"><strong class="text-white">Optional tasks</strong> offer additional incentives (like bonuses or exclusive content) but are not required for the main claim.</p>
+</div>
+</div>
+</div>
+<button class="flex items-center gap-1 text-primary" id="open-guide-modal">
+<span class="material-symbols-outlined text-lg">help_outline</span>
+<span class="text-xs font-semibold">Guide</span>
+</button>
+</div>
+<div class="space-y-4">
+<div class="task-container space-y-3">
+<div class="flex items-center justify-between">
+<label class="text-sm font-medium text-text-light" for="twitter-toggle">Follow Twitter Account</label>
+<label class="switch">
+<input class="task-enable" id="twitter-toggle" type="checkbox"/>
+<span class="slider"></span>
+</label>
+</div>
+<div class="task-details hidden space-y-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-subtle-light">alternate_email</span>
+<input class="form-input glass-input w-full rounded-lg border-transparent pl-10 text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" placeholder="Twitter handle" type="text"/>
+</div>
+<div class="flex items-center justify-between">
+<label class="flex items-center gap-2 text-xs font-medium text-subtle-light">
+<span>Optional Task</span>
+<label class="switch">
+<input class="task-optional" type="checkbox"/>
+<span class="slider"></span>
+</label>
+<span>Required for Claim</span>
+</label>
+</div>
+<div class="task-incentive relative hidden">
+<input class="form-input glass-input w-full rounded-lg border-transparent text-sm text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" placeholder="Incentive for completion (e.g., Bonus 0.001 ETH)" type="text"/>
+</div>
+</div>
+</div>
+<div class="task-container space-y-3">
+<div class="flex items-center justify-between">
+<label class="text-sm font-medium text-text-light" for="discord-toggle">Join Discord Server</label>
+<label class="switch">
+<input checked="" class="task-enable" id="discord-toggle" type="checkbox"/>
+<span class="slider"></span>
+</label>
+</div>
+<div class="task-details space-y-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-subtle-light">link</span>
+<input class="form-input glass-input w-full rounded-lg border-transparent pl-10 text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" placeholder="discord.gg/invite-link" type="text" value="discord.gg/basenet"/>
+</div>
+<div class="flex items-center justify-between">
+<label class="flex items-center gap-2 text-xs font-medium text-subtle-light">
+<span>Optional Task</span>
+<label class="switch">
+<input checked="" class="task-optional" type="checkbox"/>
+<span class="slider"></span>
+</label>
+<span>Required for Claim</span>
+</label>
+</div>
+<div class="task-incentive relative">
+<input class="form-input glass-input w-full rounded-lg border-transparent text-sm text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" placeholder="Incentive for completion (e.g., Bonus 0.001 ETH)" type="text" value="Bonus 0.001 ETH"/>
+</div>
+</div>
+</div>
+<div class="task-container space-y-3">
+<div class="flex items-center justify-between">
+<label class="text-sm font-medium text-text-light" for="farcaster-toggle">Subscribe to Farcaster Channel</label>
+<label class="switch">
+<input checked="" class="task-enable" id="farcaster-toggle" type="checkbox"/>
+<span class="slider"></span>
+</label>
+</div>
+<div class="task-details space-y-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-subtle-light">rss_feed</span>
+<input class="form-input glass-input w-full rounded-lg border-transparent pl-10 text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" placeholder="Channel name" type="text" value="/base"/>
+</div>
+<div class="flex items-center justify-between">
+<label class="flex items-center gap-2 text-xs font-medium text-subtle-light">
+<span>Optional Task</span>
+<label class="switch">
+<input class="task-optional" type="checkbox"/>
+<span class="slider"></span>
+</label>
+<span>Required for Claim</span>
+</label>
+</div>
+<div class="task-incentive relative hidden">
+<input class="form-input glass-input w-full rounded-lg border-transparent text-sm text-text-light placeholder:text-subtle-light focus:border-primary focus:ring-primary" placeholder="Incentive for completion (e.g., Bonus 0.001 ETH)" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-4 rounded-xl shadow-sm">
+<h2 class="text-sm font-bold text-text-light mb-3">SUMMARY</h2>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between">
+<span class="text-subtle-light">Total Amount:</span>
+<span class="font-semibold text-text-light">0.1 ETH</span>
+</div>
+<div class="flex justify-between">
+<span class="text-subtle-light">Number of Packets:</span>
+<span class="font-semibold text-text-light">100</span>
+</div>
+<div class="flex justify-between">
+<span class="text-subtle-light">Network Fee:</span>
+<span class="font-semibold text-text-light">~0.0002 ETH</span>
+</div>
+<hr class="border-white/20 my-2"/>
+<div class="flex justify-between items-start">
+<span class="text-subtle-light pt-1">Claim Tasks:</span>
+<div class="text-right">
+<div class="font-semibold text-text-light">
+<span class="font-normal text-subtle-light">(Optional)</span> Join Discord: basenet
+<p class="text-xs text-green-600 font-medium">+ Bonus 0.001 ETH</p>
+</div>
+<p class="font-semibold text-text-light mt-1"><span class="font-normal text-subtle-light">(Required)</span> Subscribe on Farcaster: /base</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-white/60 backdrop-blur-sm p-4 border-t border-white/20">
+<button class="glass-button-primary w-full rounded-full py-4 text-center text-base font-bold text-white transition-colors">
+        Create Lucky Packet
+      </button>
+</footer>
+</div>
+<div class="modal-overlay" id="guide-modal">
+<div class="modal-content glass-card shadow-lg">
+<div class="flex justify-center py-2">
+<div class="w-10 h-1.5 bg-gray-300 rounded-full"></div>
+</div>
+<div class="p-4 pt-2">
+<h3 class="text-lg font-bold text-text-light text-center mb-4">Task Packet Guide</h3>
+<div class="space-y-4 text-sm text-text-light">
+<div>
+<h4 class="font-semibold mb-1">How it Works</h4>
+<p class="text-subtle-light leading-relaxed">Task Packets require users to complete specific actions (like following an account) before they can claim a share of the ETH. You can set tasks as required or as optional with a bonus incentive.</p>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Best Practices</h4>
+<ul class="list-disc list-inside space-y-1 text-subtle-light">
+<li><strong>Provide clear, direct links.</strong> Double-check your links and handles.</li>
+<li><strong>Use public accounts.</strong> Our system needs to see public profiles to verify task completion.</li>
+<li><strong>Keep it simple.</strong> 1-2 tasks usually get the best engagement.</li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Maximizing Engagement</h4>
+<p class="text-subtle-light leading-relaxed">Share your LuckyPacket link widely on social media. A clear message like "Complete two quick tasks to claim free ETH!" can significantly boost participation.</p>
+</div>
+</div>
+<button class="glass-button-primary w-full rounded-full py-3 text-center text-base font-bold text-white transition-colors mt-6" id="close-guide-modal">Got it</button>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Main task toggle script
+      document.querySelectorAll('.task-container').forEach(container => {
+        const enableToggle = container.querySelector('.task-enable');
+        const details = container.querySelector('.task-details');
+        const optionalToggle = container.querySelector('.task-optional');
+        const incentiveField = container.querySelector('.task-incentive');
+        function updateVisibility() {
+          // Show/hide entire details section
+          if (enableToggle.checked) {
+            details.style.display = 'block';
+          } else {
+            details.style.display = 'none';
+          }
+          // Show/hide incentive field based on optional toggle
+          if (enableToggle.checked && optionalToggle.checked) {
+            incentiveField.style.display = 'block';
+          } else {
+            incentiveField.style.display = 'none';
+          }
+        }
+        // Add event listeners
+        enableToggle.addEventListener('change', updateVisibility);
+        optionalToggle.addEventListener('change', updateVisibility);
+        // Initial check
+        updateVisibility();
+      });
+      // Modal script
+      const modal = document.getElementById('guide-modal');
+      const openBtn = document.getElementById('open-guide-modal');
+      const closeBtn = document.getElementById('close-guide-modal');
+      const openModal = () => modal.classList.add('open');
+      const closeModal = () => modal.classList.remove('open');
+      openBtn.addEventListener('click', openModal);
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+    });
+</script>
+</body></html>

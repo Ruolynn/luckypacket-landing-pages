@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket - Notifications</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0052FF",
+            "background-light": "#f8f6f6",
+            "background-dark": "#111827",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1F2937",
+            "text-light": "#1A1A1A",
+            "text-dark": "#F9FAFB",
+            "subtext-light": "#6B7280",
+            "subtext-dark": "#9CA3AF",
+            "border-light": "#F0F0F0",
+            "border-dark": "#374151",
+            "success": "#00B87A",
+            "warning": "#FFAA00",
+            "achievement": "#7F56D9",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center justify-between border-b border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark p-4">
+<div class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark text-2xl">arrow_back</span>
+</div>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">Notifications</h1>
+<div class="flex size-10 shrink-0 items-center justify-center"></div>
+</header>
+<main class="flex flex-col flex-grow">
+<div class="border-b border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark px-4 pt-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-3">
+<button class="whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white">All</button>
+<button class="whitespace-nowrap rounded-full bg-background-light px-4 py-2 text-sm font-semibold text-subtext-light dark:bg-background-dark dark:text-subtext-dark">Claims</button>
+<button class="whitespace-nowrap rounded-full bg-background-light px-4 py-2 text-sm font-semibold text-subtext-light dark:bg-background-dark dark:text-subtext-dark">Expirations</button>
+<button class="whitespace-nowrap rounded-full bg-background-light px-4 py-2 text-sm font-semibold text-subtext-light dark:bg-background-dark dark:text-subtext-dark">Achievements</button>
+<button class="whitespace-nowrap rounded-full bg-background-light px-4 py-2 text-sm font-semibold text-subtext-light dark:bg-background-dark dark:text-subtext-dark">System Messages</button>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center flex-grow text-center px-8 py-20">
+<div class="flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-5xl">notifications_off</span>
+</div>
+<h3 class="mt-6 text-lg font-bold text-text-light dark:text-text-dark">No new notifications yet!</h3>
+<p class="mt-2 text-base text-subtext-light dark:text-subtext-dark">We'll let you know when there's something new for you.</p>
+</div>
+</main>
+</div>
+
+</body></html>

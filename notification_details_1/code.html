@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notification Details</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0052FF",
+              "background-light": "#F9F9F9",
+              "background-dark": "#101014",
+              "text-primary-light": "#1A1A1A",
+              "text-primary-dark": "#F0F0F0",
+              "text-secondary-light": "#6B7280",
+              "text-secondary-dark": "#9CA3AF",
+              "glass-light": "rgba(255, 255, 255, 0.5)",
+              "glass-dark": "rgba(30, 30, 35, 0.5)",
+              "glass-border-light": "rgba(255, 255, 255, 0.7)",
+              "glass-border-dark": "rgba(45, 45, 50, 0.7)",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            boxShadow: {
+              'soft-glow': '0 10px 30px -10px rgba(0, 82, 255, 0.2), 0 4px 6px -4px rgba(0, 82, 255, 0.1)',
+            },
+            backdropBlur: {
+              'xl': '24px',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-hidden">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover blur-sm scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjtmg9N1ipxOddD2gjGAyrrsWY3q_cZhrYbiXPqFSMqUXGjlCr75UUMSYZmt0YiCOW-stTTdLRx1HPWXSVuZgNEgEafLsM43G00i4ILa0ZLh8r9osm_qk4slr9dBEwgcPd1GnuGTA64kBqI-y6oErEHwIEOGSS9a2em6Cghk5fejA5km9XFJZBrRisNhVH232_XhIj1TH46uBseyGCgwNftSOEmHW76LSd2pzU8lgNgKb0ilJYuTOFmL1tYOftj2tWi3LSDhHBoTS0');"></div>
+<div class="absolute inset-0 bg-background-light/50 dark:bg-background-dark/70"></div>
+<div class="relative z-10 flex flex-col h-full min-h-screen">
+<div class="flex items-center p-4">
+<button class="flex items-center justify-center w-10 h-10 rounded-full bg-glass-light dark:bg-glass-dark border border-glass-border-light dark:border-glass-border-dark text-text-primary-light dark:text-text-primary-dark backdrop-blur-xl">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div class="flex-1"></div> 
+<button class="flex items-center justify-center w-10 h-10 rounded-full bg-glass-light dark:bg-glass-dark border border-glass-border-light dark:border-glass-border-dark text-text-primary-light dark:text-text-primary-dark backdrop-blur-xl">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<div class="flex flex-col items-center justify-center flex-grow p-6">
+<div class="w-full max-w-md p-6 sm:p-8 rounded-xl bg-glass-light dark:bg-glass-dark border border-glass-border-light dark:border-glass-border-dark backdrop-blur-xl shadow-lg">
+<div class="flex justify-center mb-6">
+<div class="flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-5xl text-primary">workspace_premium</span>
+</div>
+</div>
+<h1 class="text-text-primary-light dark:text-text-primary-dark text-[28px] font-bold leading-tight tracking-tight text-center">New Achievement Unlocked!</h1>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal text-center pt-2 pb-6">June 15, 2024, 10:32 AM</p>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-normal leading-relaxed text-center mb-8">You've unlocked the 'Generous Giver' achievement for sending 10 Lucky Packets!</p>
+<button class="flex w-full items-center justify-center overflow-hidden rounded-lg h-14 bg-primary text-white gap-2 text-base font-bold leading-normal tracking-wide shadow-soft-glow transition-transform active:scale-95">
+                        View My Achievements
+                    </button>
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-lg h-12 text-sm font-bold leading-normal tracking-wide text-red-500 hover:bg-red-500/10 active:bg-red-500/20 transition-colors">
+<span class="material-symbols-outlined">delete</span>
+                        Delete Notification
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

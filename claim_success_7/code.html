@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket dApp - Success!</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea2a33",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+            "gold": "#FFD700"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .confetti-piece {
+      position: absolute;
+      width: 8px;
+      height: 16px;
+      background: #FFD700;
+      top: 0;
+      opacity: 0;
+      animation: fall 3s ease-in-out infinite;
+    }
+    .confetti-piece.red {
+      background: #E53E3E;
+    }
+    .confetti-piece:nth-child(1) {
+      left: 10%;
+      animation-delay: 0s;
+    }
+    .confetti-piece:nth-child(2) {
+      left: 20%;
+      animation-delay: -1.2s;
+    }
+    .confetti-piece:nth-child(3) {
+      left: 30%;
+      animation-delay: -0.5s;
+    }
+    .confetti-piece:nth-child(4) {
+      left: 40%;
+      animation-delay: -1.5s;
+    }
+    .confetti-piece:nth-child(5) {
+      left: 50%;
+      animation-delay: -0.8s;
+    }
+    .confetti-piece:nth-child(6) {
+      left: 60%;
+      animation-delay: -1.8s;
+    }
+    .confetti-piece:nth-child(7) {
+      left: 70%;
+      animation-delay: -0.2s;
+    }
+    .confetti-piece:nth-child(8) {
+      left: 80%;
+      animation-delay: -1s;
+    }
+    .confetti-piece:nth-child(9) {
+      left: 90%;
+      animation-delay: -0.3s;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(-10vh) rotateZ(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotateZ(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-hidden">
+<div class="absolute inset-0 pointer-events-none z-0">
+<div class="confetti-piece"></div>
+<div class="confetti-piece red"></div>
+<div class="confetti-piece"></div>
+<div class="confetti-piece red"></div>
+<div class="confetti-piece"></div>
+<div class="confetti-piece red"></div>
+<div class="confetti-piece"></div>
+<div class="confetti-piece red"></div>
+<div class="confetti-piece"></div>
+</div>
+<div class="relative z-10 flex flex-col flex-grow">
+<div class="flex items-center p-4">
+<div class="flex size-12 shrink-0 items-center justify-start text-transparent">
+</div>
+<h2 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-[#1A202C] dark:text-[#F7FAFC]">You Got Lucky!</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#1A202C] dark:text-[#F7FAFC] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<div class="material-symbols-outlined text-2xl" data-icon="X" data-size="24px" data-weight="regular">close</div>
+</button>
+</div>
+</div>
+<div class="flex flex-1 flex-col items-center justify-center px-4 pb-4">
+<div class="flex w-full max-w-sm flex-col items-center justify-center space-y-6">
+<div class="flex flex-col items-center justify-center rounded-xl bg-white/50 dark:bg-black/20 p-8 shadow-lg backdrop-blur-sm w-full">
+<div class="text-gold" data-icon="Toll" data-size="48px" data-weight="bold">
+<span class="material-symbols-outlined" style="font-size: 48px;">toll</span>
+</div>
+<h1 class="text-gold tracking-light text-5xl font-extrabold leading-tight py-4 text-center">0.05 ETH</h1>
+<p class="text-[#1A202C] dark:text-[#F7FAFC] text-base font-normal leading-normal text-center">From Vitalik Buterin</p>
+</div>
+<div class="w-full max-w-sm rounded-xl bg-white/50 dark:bg-black/20 p-4 shadow-lg backdrop-blur-sm">
+<div class="space-y-3">
+<div class="flex items-center justify-between text-sm">
+<span class="font-medium text-[#4A5568] dark:text-[#A0AEC0]">Packet Type</span>
+<span class="font-bold text-[#1A202C] dark:text-[#F7FAFC]">Random</span>
+</div>
+<div class="flex items-center justify-between text-sm">
+<span class="font-medium text-[#4A5568] dark:text-[#A0AEC0]">Token</span>
+<span class="font-bold text-[#1A202C] dark:text-[#F7FAFC]">ETH</span>
+</div>
+<div class="flex flex-col text-sm">
+<span class="font-medium text-[#4A5568] dark:text-[#A0AEC0] mb-1">Blessing</span>
+<p class="font-medium text-[#1A202C] dark:text-[#F7FAFC]">"Good luck in the new year! May your bags be heavy and your gas fees low."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full px-4 pt-4 pb-8">
+<div class="flex w-full flex-col items-center">
+<div class="flex w-full max-w-sm flex-col items-stretch gap-4">
+<p class="text-center text-sm font-medium text-[#4A5568] dark:text-[#A0AEC0]">Share Your Luck!</p>
+<div class="grid grid-cols-3 gap-3">
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-white/50 dark:bg-black/20 p-4 text-[#1A202C] dark:text-[#F7FAFC] shadow-sm backdrop-blur-sm transition-colors hover:bg-white/80 dark:hover:bg-black/40">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+</svg>
+<span class="text-xs font-bold">X</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-white/50 dark:bg-black/20 p-4 text-[#1A202C] dark:text-[#F7FAFC] shadow-sm backdrop-blur-sm transition-colors hover:bg-white/80 dark:hover:bg-black/40">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.17.9-.501 1.2-.822 1.23-.696.065-1.225-.46-1.9-1.002-1.045-.8-1.636-1.287-2.67-2.064-1.284-.954-.466-1.482.254-2.336.19-.22.36-.44.512-.654.498-.703.996-1.408 1.166-1.612.17-.204.34-.408 0-.68-1.07.866-1.07.866-2.274 1.733-.21.15-.42.27-.63.36-.5.25-1 .09-1.43-.19-1.42-.92-2.37-3.04-2.47-3.23-.22-.4-.06-.8.26-1.01.32-.21 2.37-1.08 6.94-3.11.08-.03.17-.07.25-.1.08-.02.17-.04.25-.04z"></path>
+</svg>
+<span class="text-xs font-bold">Telegram</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 rounded-xl bg-white/50 dark:bg-black/20 p-4 text-[#1A202C] dark:text-[#F7FAFC] shadow-sm backdrop-blur-sm transition-colors hover:bg-white/80 dark:hover:bg-black/40">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4464.8258-.6187 1.2525a17.2969 17.2969 0 0 0-4.8776 0 11.2178 11.2178 0 0 0-.6187-1.2525.0741.0741 0 0 0-.0785-.0371 19.7363 19.7363 0 0 0-4.8851 1.5152.0629.0629 0 0 0-.0348.0626c-.0186.136-.099.6884-.1328 1.0214a14.7226 14.7226 0 0 0-1.2882 5.0287c0 2.2202 1.2278 4.3459 1.2278 4.3459a1.0962 1.0962 0 0 0 .1448.2031c.2315.22.4834.3482.742.4416a12.6303 12.6303 0 0 0 2.0729.5448 1.341 1.341 0 0 0 .1536-.0186 12.1643 12.1643 0 0 0 1.0434-.3868 11.2829 11.2829 0 0 0 1.0118-.4651 9.4704 9.4704 0 0 0 .864-.5107 10.39 10.39 0 0 0 .9272.4834 11.313 11.313 0 0 0 2.9425 1.0118 1.341 1.341 0 0 0 .1536.0186 12.6363 12.6363 0 0 0 2.0729-.5448c.2586-.0934.5105-.2216.742-.4416a1.0962 1.0962 0 0 0 .1448-.2031s1.2278-2.1257 1.2278-4.3459a14.7335 14.7335 0 0 0-1.2882-5.0287c-.0338-.333-.1142-.8854-.1328-1.0214a.0629.0629 0 0 0-.0348-.0626Zm-5.0287 10.8332c-1.1866 0-2.1552-.962-2.1552-2.1551s.9686-2.1551 2.1552-2.1551c1.1865 0 2.1551.962 2.1551 2.1551s-.9686 2.1551-2.1551 2.1551Zm-6.5268 0c-1.1865 0-2.1551-.962-2.1551-2.1551s.9686-2.1551 2.1551-2.1551c1.1866 0 2.1552.962 2.1552 2.1551s-.9686 2.1551-2.1552 2.1551Z"></path>
+</svg>
+<span class="text-xs font-bold">Discord</span>
+</button>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-transparent text-[#1A202C] dark:text-[#F7FAFC] text-base font-bold leading-normal tracking-[0.015em] w-full">
+<span class="truncate">Done</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

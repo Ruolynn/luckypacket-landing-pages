@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Lucky Packet</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#E53935",
+              "background-light": "#F5F5F5",
+              "background-dark": "#212121",
+              "text-light": "#212121",
+              "text-dark": "#F5F5F5",
+              "subtle-light": "#9E9E9E",
+              "subtle-dark": "#9E9E9E",
+              "card-light": "#FFFFFF",
+              "card-dark": "#2a2a2a",
+              "border-light": "#EEEEEE",
+              "border-dark": "#424242"
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.5rem",
+                "lg": "1rem",
+                "xl": "1.5rem",
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="text-text-light dark:text-text-dark flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Create Packet</h1>
+<div class="size-10 shrink-0"></div>
+</header>
+<main class="flex-1 px-4 py-2">
+<!-- Balance Display -->
+<p class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-normal text-center pb-4">Balance: 1.234 ETH</p>
+<!-- Card Container -->
+<div class="flex flex-col gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm">
+<!-- Packet Type Section -->
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-text-light dark:text-text-dark text-base font-bold leading-tight tracking-[-0.015em]">Packet Type</h3>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark text-lg cursor-help">help_outline</span>
+</div>
+<div class="flex pt-3">
+<div class="flex h-12 flex-1 items-center justify-center rounded-lg bg-background-light dark:bg-background-dark p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:shadow-md text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal transition-colors">
+<span class="truncate">Normal</span>
+<input class="invisible w-0" name="packet-type" type="radio" value="Normal"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:shadow-md text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal transition-colors">
+<span class="truncate">Lucky</span>
+<input checked="" class="invisible w-0" name="packet-type" type="radio" value="Lucky"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Total Amount Section -->
+<div>
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal pb-2">Total Amount</p>
+<div class="relative">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary/50 h-14 placeholder:text-subtle-light dark:placeholder:text-subtle-dark p-3.5 text-base font-normal leading-normal pr-24" placeholder="0.00" type="number"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-2">
+<select class="form-select appearance-none h-10 rounded-md border-0 bg-card-light dark:bg-card-dark text-text-light dark:text-text-dark font-semibold focus:ring-0 focus:outline-none pr-8">
+<option>ETH</option>
+<option>USDC</option>
+<option>DEGEN</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 text-subtle-light dark:text-subtle-dark">unfold_more</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Number of Packets Section -->
+<div>
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal pb-2">Number of Packets</p>
+<div class="relative flex h-14 items-center rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus-within:ring-2 focus-within:ring-primary/50 focus-within:border-primary/50">
+<button class="px-4 text-primary text-3xl font-light h-full rounded-l-lg">-</button>
+<input class="form-input w-full grow border-0 bg-transparent text-center text-text-light dark:text-text-dark placeholder:text-subtle-light dark:placeholder:text-subtle-dark focus:ring-0" placeholder="10" type="number"/>
+<button class="px-4 text-primary text-2xl font-light h-full rounded-r-lg">+</button>
+</div>
+</label>
+</div>
+<!-- Blessing Message Section -->
+<div>
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal pb-2">Add a Blessing</p>
+<textarea class="form-textarea w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary/50 placeholder:text-subtle-light dark:placeholder:text-subtle-dark p-3.5 text-base font-normal leading-normal" placeholder="Good luck and have fun!" rows="3"></textarea>
+</label>
+</div>
+</div>
+<!-- Options Section -->
+<div class="flex flex-col gap-4 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm mt-4">
+<!-- Expiration Date -->
+<div>
+<label class="text-text-light dark:text-text-dark text-base font-bold leading-normal" for="expires-in">Expires In</label>
+<div class="relative mt-2">
+<select class="form-select w-full appearance-none rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary/50 h-14 placeholder:text-subtle-light dark:placeholder:text-subtle-dark p-3.5 text-base font-normal leading-normal" id="expires-in">
+<option>24 Hours</option>
+<option>3 Days</option>
+<option>7 Days</option>
+<option>Custom</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute inset-y-0 right-3.5 flex items-center text-subtle-light dark:text-subtle-dark">expand_more</span>
+</div>
+</div>
+<!-- Exclusive Packet Toggle -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Exclusive Packet</p>
+<p class="text-subtle-light dark:text-subtle-dark text-sm">Only specified addresses can claim.</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input class="peer sr-only" type="checkbox" value=""/>
+<div class="peer h-6 w-11 rounded-full bg-border-light dark:bg-border-dark after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white"></div>
+</label>
+</div>
+</div>
+<!-- Gas Fee Estimation -->
+<div class="flex justify-between items-center px-2 py-4 mt-2">
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Estimated Gas Fee</p>
+<p class="text-sm font-semibold text-text-light dark:text-text-dark">~0.0002 ETH</p>
+</div>
+</main>
+<!-- CTA Button -->
+<footer class="sticky bottom-0 p-4 bg-background-light dark:bg-background-dark">
+<button class="flex h-14 w-full items-center justify-center rounded-xl bg-primary text-base font-bold text-white shadow-lg transition-colors hover:bg-primary/90 disabled:bg-primary/40 disabled:cursor-not-allowed">Create Lucky Packet</button>
+</footer>
+</div>
+</body></html>

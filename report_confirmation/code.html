@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Report Confirmation - LuckyPacket</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea2a33",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style type="text/tailwindcss">
+    @layer utilities {
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+      .dark .glassmorphism {
+        background: rgba(40, 40, 40, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col grow justify-center items-center p-6 text-center">
+<!-- Confirmation Icon Container -->
+<div class="flex justify-center items-center w-24 h-24 bg-[#00D17B]/20 rounded-full mb-8">
+<div class="flex justify-center items-center w-16 h-16 bg-[#00D17B] rounded-full">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="check">check</span>
+</div>
+</div>
+<!-- Headline Text -->
+<h1 class="text-[#1A1A1A] dark:text-white tracking-tight text-3xl font-bold leading-tight px-4 pb-3">Thank You for Your Report!</h1>
+<!-- Body Text -->
+<p class="text-[#666666] dark:text-gray-300 text-base font-normal leading-normal pb-8 max-w-md">
+        Your report has been received and is now under review by our team. We will take appropriate action based on our community guidelines.
+      </p>
+<!-- Button Group -->
+<div class="flex flex-col items-stretch gap-3 w-full max-w-sm">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-[#00D17B] text-white text-base font-bold leading-normal tracking-[0.015em] w-full transition-colors hover:bg-opacity-90">
+<span class="truncate">Return to Lucky Packet</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-transparent text-[#1A1A1A] dark:text-white text-base font-bold leading-normal tracking-[0.015em] w-full transition-colors hover:bg-gray-500/10">
+<span class="truncate">Go to Home</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

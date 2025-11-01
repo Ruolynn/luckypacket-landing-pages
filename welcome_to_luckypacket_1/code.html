@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket dApp Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .snap-parent {
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+        .snap-child {
+            scroll-snap-align: center;
+            flex-shrink: 0;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-hidden">
+<header class="flex justify-end px-4 pt-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-background-light/80 dark:bg-background-dark/80 text-primary text-sm font-bold leading-normal tracking-[0.015em] backdrop-blur-sm">
+<span class="truncate">Skip</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col">
+<div class="flex-1 w-full overflow-x-auto snap-parent">
+<div class="flex h-full w-max items-center">
+<!-- Slide 1 -->
+<div class="flex w-screen flex-col items-center justify-center snap-child px-4">
+<div class="w-full max-w-sm">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl aspect-square" data-alt="Stylized Lucky Packet with golden coins emanating from it, on a light background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEppnOI-o51aVL073HuMGd7XSJBj4BXIjegPSwFL_73kctAN73ZejxtbPOGheADf6fQsQsohSJXm5E6aF9fgTtssTaCFjIQU-AWtsEVnmpKaWCcmNtaRIfr6IvQx5nUFQ_qS1mefKgtbQsV1vBfR-y8HR866Q0CNXFHY0Hny5CG_mYd7bZKe-P1RES-uNIzdlQJ35guthI-Yglw934YBjXIifEPw-5ewqtMRO2UU4AtKkrpli26PhkvMICW8LuCP4V6IZiFd225FIH");'>
+</div>
+</div>
+<h1 class="text-[#1b0e0e] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6">Share Joy with Crypto Lucky Packets</h1>
+<p class="text-[#1b0e0e] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 text-center max-w-sm">Introduce the fun of sending and receiving lucky crypto gifts with LuckyPacket.</p>
+</div>
+<!-- Slide 2 -->
+<div class="flex w-screen flex-col items-center justify-center snap-child px-4">
+<div class="w-full max-w-sm">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl aspect-square" data-alt="A graphic of a rocket taking off, superimposed with the Base chain logo, symbolizing speed and efficiency." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXNJlHvd1C_fg9w6bamFCdMD_0YIoO0_nOdZ2uFpkCCRySSjzMHb_7HmokJeoY8gC1PHCSrjisdv_Vre8k5sO3A32QCQm9myE5bpCkTP-60O2QIs17gpIkztArj8J6nJ0obM-g4F9OBgwoakUNJVf7jinxZvIuBjPIJysARJWT6Av_2VVRQk1PaJV63FV49NlsOSkS1yppNl0zgBUbWhJG4Zu1Z91CVJRTkS6UdBBSTnbaB_YnPXQ_ao_1V29yl4E5JGYOB-NNQzIC");'>
+</div>
+</div>
+<h1 class="text-[#1b0e0e] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6">Instant &amp; Affordable</h1>
+<p class="text-[#1b0e0e] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 text-center max-w-sm">Highlight the low gas fees and fast transactions on the Base chain.</p>
+</div>
+<!-- Slide 3 -->
+<div class="flex w-screen flex-col items-center justify-center snap-child px-4">
+<div class="w-full max-w-sm">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl aspect-square" data-alt="A glowing digital key unlocking a portal to a futuristic Web3 world." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxXm5_URaa0SYC1ISBIMDLFuqDyx5P2d32oYHBzO0mHtDNArEoR4Gynjk5qJq98WhSX6b_A5I8OhhlPpUM97Tb5P37Au2DLllc3tWL5tWnxiFF2A5-2SrLO18uuv4BD_gj_9mlgPypxwY-BkCCOMjwfqvVqvsthXwMIhWzd977H57rFP8tugSCkdsmJ-NBX-YzGTFwXZBMl8vSpYJmHkiuC6u09zezVD50LljPG30WPGEmPofuQ96NGFCl9OSgu8bMJIxOHO0nFDso");'>
+</div>
+</div>
+<h1 class="text-[#1b0e0e] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3 pt-6">Your Easiest Start in Web3</h1>
+<p class="text-[#1b0e0e] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 text-center max-w-sm">Position the app as a simple, fun entry point for newcomers to crypto.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full p-4 pb-8 space-y-4 bg-background-light dark:bg-background-dark">
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+</div>
+<div class="flex flex-col gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] transition-transform active:scale-[0.98]" onclick="window.location.href='accept_terms_of_service/code.html'">
+<span class="truncate">Get Started</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-xs text-text-light/60 dark:text-text-dark/60">
+<span>By continuing, you agree to our</span>
+<a href="accept_terms_of_service/code.html" class="text-primary underline hover:text-primary/80">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

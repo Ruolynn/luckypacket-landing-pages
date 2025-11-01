@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Guide - LuckyPacket</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea2a33",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-gray-900 dark:text-gray-100 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">User Guide</h1>
+<div class="w-10"></div> <!-- Spacer for centering title -->
+</div>
+</header>
+<main class="flex-1">
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="text-primary flex border-none bg-primary/10 dark:bg-primary/20 items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-gray-900 dark:text-gray-100 focus:outline-0 focus:ring-0 border-none bg-primary/10 dark:bg-primary/20 focus:border-none h-full placeholder:text-primary/70 dark:placeholder:text-primary/60 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search for keywords" value=""/>
+</div>
+</label>
+</div>
+<!-- Chips / Table of Contents -->
+<nav class="px-4 pt-1 pb-3">
+<div class="flex gap-3 overflow-x-auto pb-2 -mb-2">
+<a class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-4 transition-colors" href="#getting-started">
+<p class="text-sm font-medium leading-normal">Getting Started</p>
+</a>
+<a class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 text-gray-800 dark:text-gray-200 px-4 transition-colors" href="#creating-packets">
+<p class="text-sm font-medium leading-normal">Creating Packets</p>
+</a>
+<a class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 text-gray-800 dark:text-gray-200 px-4 transition-colors" href="#claiming-packets">
+<p class="text-sm font-medium leading-normal">Claiming Packets</p>
+</a>
+<a class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 text-gray-800 dark:text-gray-200 px-4 transition-colors" href="#profile">
+<p class="text-sm font-medium leading-normal">Profile</p>
+</a>
+<a class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-200 dark:bg-white/10 hover:bg-gray-300 dark:hover:bg-white/20 text-gray-800 dark:text-gray-200 px-4 transition-colors" href="#security">
+<p class="text-sm font-medium leading-normal">Security</p>
+</a>
+</div>
+</nav>
+<!-- Accordions -->
+<div class="flex flex-col p-4 pt-2 gap-3">
+<section class="scroll-mt-24" id="getting-started">
+<details class="flex flex-col rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-background-dark px-4 py-2 group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<h3 class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Getting Started</h3>
+<div class="text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed pb-3">
+              A brief recap of what LuckyPacket is and how to connect your Web3 wallet. We also cover the basics of funding your wallet on the Base chain to get you started.
+            </p>
+</details>
+</section>
+<section class="scroll-mt-24" id="creating-packets">
+<details class="flex flex-col rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-background-dark px-4 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<h3 class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Creating Lucky Packets</h3>
+<div class="text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed pb-3">
+              Learn how to create a standard Lucky Packet, understand advanced options like setting claim conditions, and discover how to create and use special Task Packets.
+            </p>
+</details>
+</section>
+<section class="scroll-mt-24" id="claiming-packets">
+<details class="flex flex-col rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-background-dark px-4 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<h3 class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Claiming &amp; Managing</h3>
+<div class="text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed pb-3">
+              Find out how to claim a Lucky Packet from a link or QR code, view your complete claim history, and understand the different transaction statuses you might see.
+            </p>
+</details>
+</section>
+<section class="scroll-mt-24" id="profile">
+<details class="flex flex-col rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-background-dark px-4 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<h3 class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Profile &amp; Achievements</h3>
+<div class="text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed pb-3">
+              This section explains how to customize your user profile with a unique name and avatar. We'll also dive into the achievement system and show you how to earn cool badges.
+            </p>
+</details>
+</section>
+<section class="scroll-mt-24" id="security">
+<details class="flex flex-col rounded-xl border border-gray-200 dark:border-white/10 bg-white dark:bg-background-dark px-4 py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2 list-none">
+<h3 class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Settings &amp; Security</h3>
+<div class="text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed pb-3">
+              Learn how to manage your notification preferences, follow best practices for wallet security within the dApp, and safely disconnect your wallet when needed.
+            </p>
+</details>
+</section>
+</div>
+</main>
+</div>
+</body></html>

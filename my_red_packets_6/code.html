@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Activity - LuckyPacket dApp</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0052FF",
+            "background-light": "#F9F9FB",
+            "background-dark": "#121218",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1A1A22",
+            "text-primary-light": "#1A1A1A",
+            "text-primary-dark": "#F0F0F0",
+            "text-secondary-light": "#6B7280",
+            "text-secondary-dark": "#9E9E9E",
+            "status-green": "#10B981",
+            "status-yellow": "#F59E0B",
+            "status-red": "#EF4444",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-24">
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-text-primary-light dark:text-text-primary-dark">arrow_back</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-tight flex-1 text-center">Activity</h1>
+<div class="flex size-10 shrink-0 items-center justify-center">
+<button class="flex size-10 items-center justify-center rounded-full active:bg-gray-200 dark:active:bg-gray-700">
+<span class="material-symbols-outlined text-2xl text-text-primary-light dark:text-text-primary-dark">ios_share</span>
+</button>
+</div>
+</div>
+<div class="sticky top-[60px] z-10 bg-background-light dark:bg-background-dark px-4 pt-2 pb-4">
+<div class="relative">
+<span class="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-xl text-text-secondary-light dark:text-text-secondary-dark">search</span>
+<input class="h-12 w-full rounded-full border border-gray-300 bg-card-light dark:border-gray-700 dark:bg-card-dark pl-10 pr-4 text-sm text-text-primary-light dark:text-text-primary-dark placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark focus:border-primary focus:ring-primary" placeholder="Search by name, address..." type="text"/>
+</div>
+</div>
+<div class="sticky top-[128px] z-10 bg-background-light dark:bg-background-dark px-4">
+<div class="flex border-b border-gray-200 dark:border-gray-700 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary pb-3 pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal text-primary">Created</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-3 pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal text-text-secondary-light dark:text-text-secondary-dark">Claimed</p>
+</a>
+</div>
+</div>
+<div class="flex flex-1 flex-col items-center justify-center p-8 text-center">
+<div class="flex size-32 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48">card_giftcard</span>
+</div>
+<h2 class="mt-6 text-xl font-bold text-text-primary-light dark:text-text-primary-dark">No Lucky Packets yet!</h2>
+<p class="mt-2 text-base text-text-secondary-light dark:text-text-secondary-dark">Your activity log is clear. Why not create your first one?</p>
+<a class="mt-8 flex h-14 w-full max-w-xs items-center justify-center gap-2 rounded-full bg-primary px-5 text-base font-bold text-white shadow-lg transition-transform duration-200 ease-in-out hover:scale-105 active:scale-95" href="#">
+<span class="material-symbols-outlined text-2xl">add</span>
+<span>Create New Lucky Packet</span>
+</a>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-20 border-t border-gray-200 bg-background-light/80 backdrop-blur-md dark:border-gray-800 dark:bg-background-dark/80">
+<nav class="flex h-20 items-center justify-around">
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">leaderboard</span>
+<span class="text-xs font-medium">Leaderboard</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="text-xs font-bold">Activity</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</div>
+</div>
+</body></html>

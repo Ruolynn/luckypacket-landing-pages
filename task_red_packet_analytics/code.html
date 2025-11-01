@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lucky Packet Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ea2a33",
+              "background-light": "#f8f6f6",
+              "background-dark": "#211111",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">arrow_back</span>
+</div>
+<h1 class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Lucky Packet Analytics</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-zinc-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">ios_share</span>
+</button>
+</div>
+</div>
+<div class="px-4">
+<!-- Headline Text -->
+<h2 class="text-zinc-900 dark:text-white tracking-light text-[28px] font-bold leading-tight pt-5 pb-3">My First Community Campaign</h2>
+<!-- Chips (Date Range Selector) -->
+<div class="flex gap-3 pb-3 overflow-x-auto">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">Last 24h</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-zinc-200 dark:bg-zinc-800 pl-4 pr-4">
+<p class="text-zinc-600 dark:text-zinc-300 text-sm font-medium leading-normal">7 days</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-zinc-200 dark:bg-zinc-800 pl-4 pr-4">
+<p class="text-zinc-600 dark:text-zinc-300 text-sm font-medium leading-normal">All time</p>
+</div>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-2 gap-4 pt-4">
+<div class="flex flex-1 flex-col gap-2 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium leading-normal">Total Claims</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">850 / 1000</p>
+</div>
+<div class="flex flex-1 flex-col gap-2 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium leading-normal">Unique Claimants</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">789</p>
+</div>
+<div class="flex flex-1 flex-col gap-2 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium leading-normal">Claim Rate</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">85%</p>
+</div>
+<div class="flex flex-1 flex-col gap-2 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium leading-normal">Value Distributed</p>
+<p class="text-zinc-900 dark:text-white tracking-light text-2xl font-bold leading-tight">1.5 ETH</p>
+</div>
+</div>
+<!-- Section Header -->
+<h2 class="text-zinc-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pt-8 pb-3">Task Performance</h2>
+<!-- Task Performance List -->
+<div class="flex flex-col gap-4">
+<!-- Task Item 1 -->
+<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-lg bg-zinc-200 dark:bg-zinc-800">
+<svg class="h-6 w-6 text-zinc-900 dark:text-white" fill="currentColor" viewbox="0 0 24 24">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+</svg>
+</div>
+<div class="flex-1">
+<p class="text-base font-bold text-zinc-900 dark:text-white">Follow @LuckyPacket on X</p>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">850 / 1000 completed</p>
+</div>
+<p class="text-base font-bold text-zinc-900 dark:text-white">85%</p>
+</div>
+<div class="h-2 w-full rounded-full bg-zinc-200 dark:bg-zinc-800">
+<div class="h-2 rounded-full bg-primary" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Task Item 2 -->
+<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-lg bg-zinc-200 dark:bg-zinc-800">
+<svg class="h-6 w-6 text-zinc-900 dark:text-white" fill="currentColor" viewbox="0 0 24 24">
+<path d="M20.317 4.3698C18.699 3.1578 16.634 2.4438 14.445 2.1148C14.341 2.2948 14.227 2.4938 14.112 2.7018C12.602 2.2808 11.025 2.2808 9.506 2.7018C9.39 2.4938 9.277 2.2948 9.172 2.1148C6.983 2.4438 4.919 3.1578 3.299 4.3698C0.457 7.7478 -0.212 11.4398 0.057 15.0808C1.554 17.5858 4.385 19.5138 7.461 20.3688C8.129 20.6868 8.823 20.9328 9.539 21.1218C9.653 20.9428 9.76 20.7558 9.859 20.5618C9.372 20.3378 8.904 20.0888 8.459 19.8138C8.583 19.7368 8.707 19.6548 8.823 19.5678C12.158 21.0968 15.901 21.0968 19.186 19.5678C19.302 19.6548 19.426 19.7368 19.55 19.8138C19.096 20.0888 18.629 20.3378 18.15 20.5618C18.248 20.7558 18.355 20.9428 18.469 21.1218C19.185 20.9328 19.879 20.6868 20.547 20.3688C23.623 19.5138 26.454 17.5858 27.951 15.0808C28.247 10.9838 27.016 7.4118 24.317 4.3698H20.317ZM9.832 15.6808C8.618 15.6808 7.625 14.6048 7.625 13.2848C7.625 11.9648 8.609 10.8888 9.832 10.8888C11.055 10.8888 12.048 11.9648 12.029 13.2848C12.029 14.6048 11.055 15.6808 9.832 15.6808ZM18.168 15.6808C16.954 15.6808 15.961 14.6048 15.961 13.2848C15.961 11.9648 16.945 10.8888 18.168 10.8888C19.391 10.8888 20.384 11.9648 20.365 13.2848C20.365 14.6048 19.391 15.6808 18.168 15.6808Z"></path>
+</svg>
+</div>
+<div class="flex-1">
+<p class="text-base font-bold text-zinc-900 dark:text-white">Join Discord Server</p>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">700 / 1000 completed</p>
+</div>
+<p class="text-base font-bold text-zinc-900 dark:text-white">70%</p>
+</div>
+<div class="h-2 w-full rounded-full bg-zinc-200 dark:bg-zinc-800">
+<div class="h-2 rounded-full bg-primary" style="width: 70%;"></div>
+</div>
+</div>
+<!-- Task Item 3 -->
+<div class="flex flex-col gap-3 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
+<div class="flex items-center gap-3">
+<div class="flex size-10 items-center justify-center rounded-lg bg-zinc-200 dark:bg-zinc-800">
+<span class="material-symbols-outlined text-zinc-900 dark:text-white">repeat</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-bold text-zinc-900 dark:text-white">Retweet Post</p>
+<p class="text-sm text-zinc-600 dark:text-zinc-400">780 / 1000 completed</p>
+</div>
+<p class="text-base font-bold text-zinc-900 dark:text-white">78%</p>
+</div>
+<div class="h-2 w-full rounded-full bg-zinc-200 dark:bg-zinc-800">
+<div class="h-2 rounded-full bg-primary" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+<!-- Chart Visualization -->
+<div class="flex flex-col gap-4 rounded-xl bg-white dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800 mt-6 mb-8">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-bold text-zinc-900 dark:text-white">Completion Rate by Task</h3>
+<span class="material-symbols-outlined text-zinc-500 dark:text-zinc-400">info</span>
+</div>
+<div class="flex items-end justify-around h-48 gap-4 pt-4">
+<!-- Bar 1 -->
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="flex-1 w-full bg-primary rounded-t-lg" style="height: 85%;"></div>
+<p class="text-xs text-zinc-600 dark:text-zinc-400 text-center">Follow on X</p>
+</div>
+<!-- Bar 2 -->
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="flex-1 w-full bg-primary/30 dark:bg-primary/50 rounded-t-lg" style="height: 70%;"></div>
+<p class="text-xs text-zinc-600 dark:text-zinc-400 text-center">Join Discord</p>
+</div>
+<!-- Bar 3 -->
+<div class="flex flex-col items-center gap-2 flex-1">
+<div class="flex-1 w-full bg-primary/30 dark:bg-primary/50 rounded-t-lg" style="height: 78%;"></div>
+<p class="text-xs text-zinc-600 dark:text-zinc-400 text-center">Retweet Post</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

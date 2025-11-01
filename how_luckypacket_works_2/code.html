@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket - How it Works</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ea2a33",
+              "background-light": "#f8f6f6",
+              "background-dark": "#211111",
+              "text-light": "#1b0e0e",
+              "text-dark": "#f8f6f6",
+              "text-muted-light": "#994d51",
+              "text-muted-dark": "#a8999a"
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden text-text-light dark:text-text-dark">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<!-- Placeholder for logo -->
+</div>
+<div class="flex items-center justify-end">
+<p class="text-text-muted-light dark:text-text-muted-dark text-base font-bold leading-normal tracking-[0.015em] shrink-0">Skip for now</p>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<!-- Main Content Area -->
+<div class="px-4 py-4 flex-grow flex flex-col justify-center">
+<h1 class="text-3xl font-bold text-center mb-8">How LuckyPacket Works</h1>
+<!-- Carousel -->
+<div class="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch gap-6 w-full">
+<!-- Step 1 -->
+<div class="flex h-full flex-col gap-4 rounded-lg min-w-full flex-shrink-0 snap-center">
+<div class="w-full aspect-square rounded-xl flex flex-col items-center justify-center bg-primary/10">
+<span class="material-symbols-outlined text-primary text-8xl">account_balance_wallet</span>
+</div>
+<div class="text-center">
+<p class="text-lg font-bold">1. Connect Your Wallet</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">
+                                    Securely connect your Web3 wallet, like Coinbase Wallet, and make sure it has some ETH on the Base network for transactions.
+                                </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex h-full flex-col gap-4 rounded-lg min-w-full flex-shrink-0 snap-center">
+<div class="w-full aspect-square rounded-xl flex flex-col items-center justify-center bg-primary/10">
+<span class="material-symbols-outlined text-primary text-8xl">card_giftcard</span>
+</div>
+<div class="text-center">
+<p class="text-lg font-bold">2. Create a LuckyPacket</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">
+                                    Create a packet, set the amount, number of claims, and generate a unique shareable link for friends or communities.
+                                </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex h-full flex-col gap-4 rounded-lg min-w-full flex-shrink-0 snap-center">
+<div class="w-full aspect-square rounded-xl flex flex-col items-center justify-center bg-primary/10">
+<span class="material-symbols-outlined text-primary text-8xl">redeem</span>
+</div>
+<div class="text-center">
+<p class="text-lg font-bold">3. Claim Your Luck</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">
+                                    Open a shared link, connect your wallet, and claim a random amount from the packet, sent directly to your wallet.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Controls -->
+<div class="p-4 pb-8 space-y-6">
+<!-- Page Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-3 py-5">
+<div class="h-2 w-8 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+<div class="h-2 w-2 rounded-full bg-primary/30"></div>
+</div>
+<!-- Single Button -->
+<div class="flex">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Let's Go!</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

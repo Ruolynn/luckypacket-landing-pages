@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lucky Packet Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#E53E3E",
+            "secondary": "#FFD700",
+            "background-light": "#FFFFFF",
+            "background-dark": "#1A202C",
+            "text-light-primary": "#1A202C",
+            "text-dark-primary": "#F7FAFC",
+            "text-light-secondary": "#4A5568",
+            "text-dark-secondary": "#A0AEC0",
+            "border-light": "#E2E8F0",
+            "border-dark": "#2D3748",
+            "surface-light": "#F7FAFC",
+            "surface-dark": "#2D3748"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          animation: {
+            'liquid-glass': 'liquid-glass 20s ease-in-out infinite',
+            'spin': 'spin 1s linear infinite',
+          },
+          keyframes: {
+            'liquid-glass': {
+              '0%, 100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' },
+            },
+            'spin': {
+              'from': { transform: 'rotate(0deg)' },
+              'to': { transform: 'rotate(360deg)' }
+            }
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      background: white;
+      position: relative;
+    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"%3E%3Cdefs%3E%3Cfilter id="f" x="-20%25" y="-20%25" width="140%25" height="140%25"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.01 0.005" numOctaves="3" result="noise" seed="10"%3E%3C/feTurbulence%3E%3CfeDisplacementMap in="SourceGraphic" in2="noise" scale="50"%3E%3C/feDisplacementMap%3E%3C/filter%3E%3C/defs%3E%3Cg filter="url(%23f)"%3E%3Ccircle cx="400" cy="400" r="200" fill="%23f87171" /%3E%3C/g%3E%3C/svg%3E');
+        background-size: 150% 150%;
+        animation: liquid-glass 20s ease-in-out infinite;
+        opacity: 0.1;
+        z-index: -1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-10 flex items-center bg-white/70 p-4 pb-2 justify-between backdrop-blur-md border-b border-gray-200">
+<div class="text-text-light-primary flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-text-light-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Lucky Packet Details</h2>
+<div class="flex size-10 shrink-0 items-center justify-center"></div>
+</div>
+<div class="flex-grow pb-40">
+<div class="p-4">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-center bg-no-repeat aspect-square bg-cover rounded-full flex-shrink-0" data-alt="Sender's profile picture, a stylized red dragon." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6VMohc-nRTeh8X761h45bmRMm7q2v_Vfg-0kONH7Q_nBCdfYFRLeIapeq92pGDh_Zc9vXiuPA1JipUAlScWQD62R_HP6x8CQL13CPJHsbrI5MKmkB_h-YMtL0JwakBgNUikv4epVd1mzkQ9w86miZgxL_n0FXkAZLFrSVYNx5TxdNfBCFAsy8XGm7tu3IzhGTF3utlxlPEwovAD1pskmOmvcFBiFMFCSiwAPhcrHDyXNE92OAPzOCFHj0CdG-JO0Z_mKgLzT7eWYV");'></div>
+<div class="flex flex-col gap-1 flex-1">
+<p class="text-text-light-primary text-base font-bold leading-tight">0xSender.eth</p>
+<p class="text-text-light-secondary text-sm font-normal leading-normal">sends you a lucky packet:</p>
+</div>
+</div>
+</div>
+<div class="px-4 py-2 text-center flex flex-col items-center gap-3">
+<p class="text-xl font-semibold text-text-light-primary">"Complete the tasks to claim your reward!"</p>
+<div class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/50 px-3 py-1 backdrop-blur-sm">
+<svg class="w-5 h-5" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#627EEA"></path>
+<path d="M16.4912 4.07996L16.3512 4.60996V17.27L16.4912 17.41L23.9912 13.06L16.4912 4.07996Z" fill="white" fill-opacity="0.602"></path>
+<path d="M16.4912 4.07996L9.00119 13.06L16.4912 17.41V4.07996Z" fill="white"></path>
+<path d="M16.4912 26.54V18.81L24.0012 14.47L16.4912 26.54Z" fill="white" fill-opacity="0.602"></path>
+<path d="M16.4912 26.54V18.81L9.00119 14.47L16.4912 26.54Z" fill="white"></path>
+<path d="M16.4912 17.41L23.9912 13.06L16.4912 9.77996V17.41Z" fill="black" fill-opacity="0.2"></path>
+<path d="M9.00119 13.06L16.4912 17.41V9.77996L9.00119 13.06Z" fill="black" fill-opacity="0.2"></path>
+</svg>
+<span class="text-sm font-semibold text-text-light-primary">Ethereum (ETH)</span>
+</div>
+</div>
+<div class="px-4 pt-4">
+<div class="rounded-xl border border-gray-200 bg-white/50 backdrop-blur-sm p-4">
+<h3 class="text-lg font-bold text-text-light-primary mb-1 text-center">Tasks to Claim</h3>
+<p class="text-sm text-text-light-secondary text-center mb-4">Complete mandatory tasks to unlock your reward.</p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<p class="font-semibold text-text-light-primary flex-1">Follow @LuckyPacket on X</p>
+<div class="flex items-center gap-1.5 text-green-600 opacity-70">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span class="text-sm font-semibold">Completed</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<p class="font-semibold text-text-light-primary flex-1">Join LuckyPacket Discord</p>
+<button class="shrink-0 rounded-lg bg-blue-500/80 backdrop-blur-sm border border-white/30 shadow-md hover:bg-blue-500 px-4 py-2 text-center text-sm font-bold text-white">Join Server</button>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<p class="font-semibold text-text-light-primary flex-1">Like our latest post</p>
+<div class="flex items-center gap-1.5 text-red-600">
+<span class="material-symbols-outlined text-xl">cancel</span>
+<span class="text-sm font-semibold">Verification Failed</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pl-3">
+<div class="flex items-center gap-3">
+<p class="text-red-600 text-sm flex-1">Couldn't verify. Please ensure your X profile is public.</p>
+<button class="shrink-0 rounded-lg bg-red-500/80 backdrop-blur-sm border border-white/30 shadow-md hover:bg-red-500 px-4 py-2 text-center text-sm font-bold text-white">Retry</button>
+</div>
+<div class="flex items-center justify-start">
+<a class="flex items-center gap-1 text-xs text-text-light-secondary hover:text-text-light-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">help_outline</span>
+<span>Troubleshooting</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-200">
+<h4 class="text-base font-bold text-text-light-primary mb-4 text-center">Bonus Tasks</h4>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<p class="font-semibold text-text-light-primary flex-1">Retweet our pinned post</p>
+<button class="shrink-0 rounded-lg bg-gray-200 border border-gray-300 px-4 py-2 text-center text-sm font-bold text-gray-700 flex items-center gap-2" disabled="">
+<svg class="w-4 h-4 text-gray-500 animate-spin" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+<span>Verifying...</span>
+</button>
+</div>
+<div class="pl-3">
+<p class="text-xs font-semibold text-green-600">Incentive: +0.001 ETH</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<p class="font-semibold text-text-light-primary flex-1">Mint our free NFT</p>
+<button class="shrink-0 rounded-lg bg-purple-500/80 backdrop-blur-sm border border-white/30 shadow-md hover:bg-purple-500 px-4 py-2 text-center text-sm font-bold text-white">Mint Now</button>
+</div>
+<div class="pl-3">
+<p class="text-xs font-semibold text-green-600">Incentive: Earn a Raffle Entry</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<p class="font-semibold text-text-light-primary flex-1">Check out our new partners</p>
+<div class="flex items-center gap-1.5 text-green-600">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span class="text-sm font-semibold">Completed</span>
+</div>
+</div>
+<div class="pl-3">
+<p class="text-xs font-bold text-green-600">Incentive: Content Unlocked!</p>
+</div>
+<div class="mt-2">
+<button class="w-full rounded-lg bg-green-500/90 backdrop-blur-sm border border-white/30 shadow-md hover:bg-green-500 px-4 py-2.5 text-center text-sm font-bold text-white flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>View Secret Link</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 pt-3">
+<div class="flex flex-col gap-1 rounded-xl p-4 border border-gray-200 bg-white/50 backdrop-blur-sm">
+<p class="text-text-light-secondary text-sm font-medium leading-normal">Total Amount</p>
+<div class="flex items-baseline gap-1.5">
+<svg class="w-6 h-6 -ml-1" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#627EEA"></path>
+<path d="M16.4912 4.07996L16.3512 4.60996V17.27L16.4912 17.41L23.9912 13.06L16.4912 4.07996Z" fill="white" fill-opacity="0.602"></path>
+<path d="M16.4912 4.07996L9.00119 13.06L16.4912 17.41V4.07996Z" fill="white"></path>
+<path d="M16.4912 26.54V18.81L24.0012 14.47L16.4912 26.54Z" fill="white" fill-opacity="0.602"></path>
+<path d="M16.4912 26.54V18.81L9.00119 14.47L16.4912 26.54Z" fill="white"></path>
+<path d="M16.4912 17.41L23.9912 13.06L16.4912 9.77996V17.41Z" fill="black" fill-opacity="0.2"></path>
+<path d="M9.00119 13.06L16.4912 17.41V9.77996L9.00119 13.06Z" fill="black" fill-opacity="0.2"></path>
+</svg>
+<p class="text-text-light-primary tracking-tight text-2xl font-bold leading-tight">1.0 ETH</p>
+</div>
+</div>
+<div class="flex flex-col gap-1 rounded-xl p-4 border border-gray-200 bg-white/50 backdrop-blur-sm">
+<p class="text-text-light-secondary text-sm font-medium leading-normal">Claim Progress</p>
+<p class="text-text-light-primary tracking-tight text-2xl font-bold leading-tight">0/10</p>
+</div>
+<div class="flex flex-col col-span-2 md:col-span-1 gap-1 rounded-xl p-4 border border-gray-200 bg-white/50 backdrop-blur-sm">
+<p class="text-text-light-secondary text-sm font-medium leading-normal">Packet Type</p>
+<p class="text-text-light-primary tracking-tight text-2xl font-bold leading-tight">Task Packet</p>
+</div>
+</div>
+<div class="px-4 pb-4">
+<div class="rounded-xl border border-gray-200 bg-white/50 p-4 text-center backdrop-blur-sm">
+<p class="text-sm font-medium text-text-light-secondary mb-3">Expires in</p>
+<div class="flex items-center justify-center gap-2">
+<div class="flex flex-col items-center w-20">
+<span class="text-4xl font-bold text-primary tracking-tighter">23</span>
+<span class="text-xs text-text-light-secondary">HOURS</span>
+</div>
+<span class="text-4xl font-bold text-primary">:</span>
+<div class="flex flex-col items-center w-20">
+<span class="text-4xl font-bold text-primary tracking-tighter">59</span>
+<span class="text-xs text-text-light-secondary">MINUTES</span>
+</div>
+<span class="text-4xl font-bold text-primary">:</span>
+<div class="flex flex-col items-center w-20">
+<span class="text-4xl font-bold text-primary tracking-tighter">30</span>
+<span class="text-xs text-text-light-secondary">SECONDS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-20 bg-white/70 backdrop-blur-md border-t border-gray-200">
+<div class="p-4 relative">
+<button class="w-full rounded-xl bg-primary/40 backdrop-blur-sm border border-white/30 shadow-lg py-4 text-center text-xl font-bold text-white/70 cursor-not-allowed" disabled="">
+                    Claim
+                </button>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none p-4">
+<div class="flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-white text-3xl">lock</span>
+<p class="text-white text-sm font-semibold mt-1">Complete mandatory tasks</p>
+</div>
+</div>
+</div>
+<div class="flex justify-around p-2 pt-0">
+<a class="flex flex-col items-center justify-center gap-1 p-2 w-full text-text-light-secondary" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 w-full text-text-light-secondary" href="#">
+<span class="material-symbols-outlined text-2xl">leaderboard</span>
+<span class="text-xs font-medium">Leaderboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 w-full text-text-light-primary" href="#">
+<span class="material-symbols-outlined text-2xl">confirmation_number</span>
+<span class="text-xs font-bold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 w-full text-text-light-secondary" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket Settings</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0052FF",
+              "background-light": "#F9F9FB",
+              "background-dark": "#121212",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1E1E1E",
+              "text-primary-light": "#1A1A1A",
+              "text-primary-dark": "#EAEAEA",
+              "text-secondary-light": "#8E8E93",
+              "text-secondary-dark": "#A0A0A0",
+              "border-light": "#EFEFEF",
+              "border-dark": "#2C2C2C",
+              "danger": "#FF3B30",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 dark:bg-background-dark/80 px-4 py-3 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+<button class="flex size-10 shrink-0 items-center justify-center text-text-primary-light dark:text-text-primary-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-tight text-text-primary-light dark:text-text-primary-dark">Settings</h1>
+<div class="size-10 shrink-0"></div>
+</header>
+<main class="flex-1 flex flex-col gap-6 px-4 py-6">
+<section class="flex flex-col gap-2">
+<h2 class="text-sm font-bold uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark px-4">GENERAL</h2>
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">language</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Language</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">paid</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Currency Display</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">dark_mode</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Dark Mode</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-2">
+<h2 class="text-sm font-bold uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark px-4">NOTIFICATIONS</h2>
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Push Notifications</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input checked="" class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4 pl-14">
+<p class="flex-1 truncate text-base font-normal text-text-primary-light dark:text-text-primary-dark">Packet Claimed</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input checked="" class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4 pl-14">
+<p class="flex-1 truncate text-base font-normal text-text-primary-light dark:text-text-primary-dark">Packet Received</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input checked="" class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4">
+<div class="flex items-center gap-4 pl-14">
+<p class="flex-1 truncate text-base font-normal text-text-primary-light dark:text-text-primary-dark">Packet Expiring Soon</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-2">
+<h2 class="text-sm font-bold uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark px-4">SECURITY &amp; PRIVACY</h2>
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Connected Wallet</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">fingerprint</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">App Lock</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<p class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">Backup &amp; Restore</p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Save or load your app data</p>
+</div>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-2">
+<h2 class="text-sm font-bold uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark px-4">PRIVACY CONTROLS</h2>
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">leaderboard</span>
+</div>
+<div class="flex flex-col">
+<p class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">Leaderboard Visibility</p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Show my activity on leaderboards</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input checked="" class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="flex flex-col">
+<p class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">Data Sharing</p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Share anonymized data for analytics</p>
+</div>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full p-0.5 transition-colors bg-gray-200 dark:bg-gray-700 has-[:checked]:bg-primary">
+<div class="h-[27px] w-[27px] rounded-full bg-white transition-transform duration-300 ease-in-out translate-x-0 peer-checked:translate-x-[20px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;"></div>
+<input checked="" class="peer invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">group</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Linked Social Accounts</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-2">
+<h2 class="text-sm font-bold uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark px-4">STORAGE</h2>
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-danger/10 text-danger">
+<span class="material-symbols-outlined">delete</span>
+</div>
+<div class="flex flex-col">
+<p class="text-base font-medium text-danger">Clear Cache &amp; Data</p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Free up space and reset app data</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-2">
+<h2 class="text-sm font-bold uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark px-4">ABOUT</h2>
+<div class="flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark">
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">help_outline</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Help &amp; Support</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Terms of Service</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+<div class="flex min-h-[64px] items-center justify-between gap-4 px-4">
+<div class="flex items-center gap-4">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<p class="flex-1 truncate text-base font-medium text-text-primary-light dark:text-text-primary-dark">Privacy Policy</p>
+</div>
+<div class="shrink-0">
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</section>
+<footer class="pt-4 pb-8 text-center">
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">App Version 1.0.0</p>
+</footer>
+</main>
+</div>
+</body></html>

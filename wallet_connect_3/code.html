@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuckyPacket - Connect Wallet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    keyframes: {
+                        spin: {
+                          '0%': { transform: 'rotate(0deg)' },
+                          '100%': { transform: 'rotate(360deg)' },
+                        }
+                    },
+                    animation: {
+                        spin: 'spin 1s linear infinite',
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display group/design-root overflow-x-hidden">
+<header class="flex h-16 w-full items-center justify-center px-4 pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">all_inclusive</span>
+<span class="text-xl font-bold tracking-tight text-[#1b0e0e] dark:text-[#f8f6f6]">LuckyPacket</span>
+</div>
+</header>
+<main class="flex w-full flex-1 flex-col items-center px-4 pt-6 pb-8">
+<div class="w-full max-w-md">
+<div class="w-full @container">
+<div class="w-full gap-1 overflow-hidden @[480px]:gap-2 aspect-[4/3] flex">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-auto flex-1" data-alt="A playful illustration of a Lucky Packet with coins floating around it, representing a digital gift." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDarNwQgEhl7fgl2bwYfbrZzBarimA8Iyad63oy3Z3ddmRPTje7eU5rTemOubkuGIODa-0iy8n4ndSPeEM0FIIGKf9MNaP7z08X2uDa20V84OvoK9vegvve9mnR6bdVQBEryGQrNG2Fm9GG60Pg2Yun_oix_fK6jV5m0HTpHW0u4_50x3A9UMN6gkszyRUVSXwP1r2f6JzI8eS9b4OUvCjhq7bYugWuW9KowHRI4ts4uH_DbRj-B6r8olK4ZWp5heLlpwdZgVESVOY6"); background-position: center 40%;'></div>
+</div>
+</div>
+<h1 class="text-[#1b0e0e] dark:text-[#f8f6f6] tracking-tight text-[32px] font-bold leading-tight text-center pb-2 pt-8">Your Web3 Lucky Packet Adventure Starts Here</h1>
+<p class="text-[#1b0e0e]/80 dark:text-[#f8f6f6]/80 text-base font-normal leading-normal pb-8 pt-1 text-center">Send and receive crypto gifts on Base.</p>
+<div class="flex flex-col gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-[#fcf8f8] text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Connect Wallet</span>
+</button>
+<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-background-light dark:bg-background-dark h-12 px-5 text-[#1b0e0e] dark:text-[#f8f6f6] text-base font-bold leading-normal">
+<img alt="Coinbase Wallet logo" class="h-6 w-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWBy_IdY0CaVB-zSiT5zca_vQI7gN7vGJP7-QjQMbDqXzn8Gtl6VDhKxQI2H4QLna2a5QgkApWWh9jNfEIHGnUeEs9kHPVrZcjKvQp_khNuaNwFbgA0zk6pYrX0n0BH5q92D_n9A0rYw2gU5RwBwzkp7T20LbY01BqTWnI-UIcq9atu20ZShN7LZ6DoP-8JcA3BzRWAINmjudVBSDq3v1nEBq83n-zYlnY-BJCwFqDFoh5-Fgt3JY3j1CoDFT8pqMWlstA719CHSx3"/>
+<span class="truncate">Coinbase Wallet</span>
+</button>
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-primary/10 dark:bg-primary/20 h-12 px-5 text-primary dark:text-primary text-base font-bold leading-normal relative">
+<div class="absolute inset-0 flex items-center justify-center gap-3">
+<svg class="h-6 w-6 animate-spin text-primary" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+<span class="truncate">Connecting...</span>
+</div>
+<img alt="Metamask logo" class="h-6 w-6 opacity-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt24ygvgBvoijATvAZuL-WrNL1EoWk7gNsrRO-kEa935OVz9_oWjW-CP0Q-t9F4vWG7JpnRKvMckgW4zUBaVAFkImTTKkoM0h6GCmSvqctF2XCU5naFmuKHkDRwDDEizi8gMkoAzshtGiBT8gg4S5a7U1JuaktWA7itZ-AGYPqpfKPh4f0HxVZ0EVB_P6BkdXkdb4Oy4-QfbOa5ElfY4vHWcnDyGP-bbtgjPEiykbcKY1qBh6GcboRr2VS6hxHHEFQCqcS8Njuh_1M"/>
+<span class="truncate opacity-0">MetaMask</span>
+</button>
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-background-light dark:bg-background-dark h-12 px-5 text-[#1b0e0e] dark:text-[#f8f6f6] text-base font-bold leading-normal">
+<img alt="Rainbow Wallet logo" class="h-6 w-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoH5sYun433zUS0hbuHPtUTUtMbcOMr7fYhDOFa_V_3Bmsb0B9cbPQXcUZusn_KD9uwkLpERzQZSR3bGi6OZg8TxiTQbEfcUVYEOYqFvQN2b8twG8Y22A9rJYnDR1EfBW0IuzOwL03my58vRfSkkRgFFP9NfzmtGAMTlCojRTaK5J3Br4QC6wbiRi9QjEon3_V9uw-Zmp5TL7_aBkqu_8iNyyg1fPnUfSYQga8fCdvjMU3M6NVU2xZ91cuBgnAJE_jWdMTveEE3u30"/>
+<span class="truncate">Rainbow</span>
+</button>
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-background-light dark:bg-background-dark h-12 px-5 text-[#1b0e0e] dark:text-[#f8f6f6] text-base font-bold leading-normal">
+<img alt="WalletConnect logo" class="h-6 w-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBugFFzuN9cmOHxg572g3nIk12OmlzGc9Zo16t6hCqZaYqof8IXODDhdHUUG4EZVPmfO3eRNitSS9QI8La9FZjQbF1A06XS2XIQrCIahnS8vIjzQqLSECtJNuStx6aFEkC7xdvDusbJSWBJMzrfbzM5WZZHP6FMIZP3P2ANvCwX6yhGLXRpctLtOdnY0FD-ygtTRoUhUhItfDykgqjZcD33v-XsBdFyd_U17xh2Zz0PKg7PdVzMztOy-HvrTsDdA5ClOG6gsmy2WqwZ"/>
+<span class="truncate">WalletConnect</span>
+</button>
+</div>
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-black/10 dark:border-white/10"></div>
+<span class="mx-4 flex-shrink text-sm font-medium text-[#1b0e0e]/60 dark:text-[#f8f6f6]/60">or</span>
+<div class="flex-grow border-t border-black/10 dark:border-white/10"></div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-background-light dark:bg-background-dark h-12 px-5 text-[#1b0e0e] dark:text-[#f8f6f6] text-base font-bold leading-normal">
+<span class="material-symbols-outlined text-2xl text-[#1b0e0e]/80 dark:text-[#f8f6f6]/80">qr_code_scanner</span>
+<span class="truncate">Connect with QR Code</span>
+</button>
+</div>
+<div class="pt-8 text-center">
+<a class="group inline-flex items-center gap-2 rounded-lg bg-black/5 dark:bg-white/5 py-2 px-4 text-sm font-medium text-[#1b0e0e]/70 dark:text-[#f8f6f6]/70 transition-colors hover:bg-black/10 dark:hover:bg-white/10 hover:text-primary dark:hover:text-primary" href="#">
+<span class="material-symbols-outlined text-lg">help</span>
+<span class="underline decoration-dotted underline-offset-4 group-hover:no-underline">What is a Web3 Wallet?</span>
+</a>
+</div>
+</div>
+</main>
+<footer class="w-full p-4">
+<div class="flex flex-col items-center justify-center gap-4 text-center">
+<p class="text-xs font-semibold uppercase tracking-wider text-[#1b0e0e]/50 dark:text-[#f8f6f6]/50">Powered by Base</p>
+<div class="flex gap-4 text-xs text-[#1b0e0e]/60 dark:text-[#f8f6f6]/60">
+<a class="hover:underline" href="#">Terms of Service</a>
+<a class="hover:underline" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
